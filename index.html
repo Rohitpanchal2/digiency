@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiency</title>
+    <link rel="icon" type="image/x-logo" href="assets/image/hero-img.png">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- slider-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ........ -->
+</head>
+
+<body>
+    <header class="nav-sticky py-3">
+        <nav class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="m-0 digi fs-39px">Digi<span class="ency">ency</span></p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="mobileview" class="d-none pointer">
+                    <label for="mobileview" class="z-3 ">
+                        <span class="fev-icon" onclick="myFunction(this)">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </span>
+                    </label>
+                    <ul class="nav_bar p-0 d-flex m-0 space align-items-center">
+                        <li><a class="px-3 fs-20px" href="#">Home</a></li>
+                        <li><a class="px-3 fs-20px" href="#">About&nbsp;Us</a></li>
+                        <li><a class="px-3 fs-20px" href="#">Services</a></li>
+                        <li><a class="px-3 fs-20px" href="#">Portfolio</a></li>
+                        <li><a class="px-3 fs-20px" href="#">Blog</a></li>
+                        <li><a class="px-3 fs-20px" href="#">Contact&nbsp;Us</a></li>
+                        <li><a class="px-4 py-2 ms-2 nav-btn d-lg-none" href="#">Let’s&nbsp;Talk</a></li>
+                    </ul>
+                    <button class="px-4 py-2 ms-2 nav-btn d-lg-flex d-none">Let’s&nbsp;Talk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-FFF7F4 py-5">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between f-c-reverse">
+                <div class="col-lg-6">
+                    <h1 class="m-0 fs-48px ff-poppins fw-bold color_bold lh-73px mw-602px">Choose What Matters To Your
+                        Business & Your Customers.
+                    </h1>
+                    <p class="m-0 fs-16px ff-poppins fw-normal color_grey mw-586px lh-24 py-3">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Aliquam in digni ssim euismod purus donec mus vulputate
+                        habitant iaculis.Com odo enim ornare turpis tempus enim, nibh nulla. Rhoncus sed.</p>
+                    <button class="hero-btn mt-2 fs-20px ff-poppins fw-medium">Get Start Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100 fs-20px fw-medium ff-poppins" src="assets/image/hero-img.png" alt="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 fs-16px fw-normal ff-poppins color_orange pb-2">Our Services</p>
+                <h2 class="m-0 fw-bold fs-39px color_bold ff-poppins pb-4">What We Do</h2>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="border_box my-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/image/ux-interface.png" alt="ux-interface">
+                            </div>
+                            <h2 class="m-0 fs-64px ff-poppins fw-semibold color-ol-grey lh-73px">01</h2>
+                        </div>
+                        <div>
+                            <h2 class="m-0 pt-2 fs-25px fw-semibold ff-poppins color_bold">UX Design</h2>
+                            <p class="m-0 py-2 fs-12px fw-lighter color_grey ff-poppins"> Mobile App, Website</p>
+                            <p class="m-0 mw-325px fs-16px fw-normal color_grey ff-poppins pt-2">Lorem ipsum dolor sit
+                                amet, consec tet ur adipiscing elit.Accumsan sed faucibu s faucibus augue. Cras ut.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="border_box my-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/image/gaming.png" alt="gaming">
+                            </div>
+                            <h2 class="m-0 fs-64px ff-poppins fw-semibold color-ol-grey lh-73px">02</h2>
+                        </div>
+                        <div>
+                            <h2 class="m-0 pt-2 fs-25px fw-semibold ff-poppins color_bold">Game Design</h2>
+                            <p class="m-0 py-2 fs-12px fw-lighter color_grey ff-poppins"> Mobile App, Website</p>
+                            <p class="m-0 mw-325px fs-16px fw-normal color_grey ff-poppins pt-2">Lorem ipsum dolor sit
+                                amet, consec tet ur adipiscing elit.Accumsan sed faucibu s faucibus augue. Cras ut.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="border_box my-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/image/design.png" alt="design">
+                            </div>
+                            <h2 class="m-0 fs-64px ff-poppins fw-semibold color-ol-grey lh-73px">03</h2>
+                        </div>
+                        <div>
+                            <h2 class="m-0 pt-2 fs-25px fw-semibold ff-poppins color_bold">Graphic Design</h2>
+                            <p class="m-0 py-2 fs-12px fw-lighter color_grey ff-poppins"> Mobile App, Website</p>
+                            <p class="m-0 mw-325px fs-16px fw-normal color_grey ff-poppins pt-2">Lorem ipsum dolor sit
+                                amet, consec tet ur adipiscing elit.Accumsan sed faucibu s faucibus augue. Cras ut.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="border_box my-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/image/web-design.png" alt="web-design">
+                            </div>
+                            <h2 class="m-0 fs-64px ff-poppins fw-semibold color-ol-grey lh-73px">04</h2>
+                        </div>
+                        <div>
+                            <h2 class="m-0 pt-2 fs-25px fw-semibold ff-poppins color_bold">Web Design</h2>
+                            <p class="m-0 py-2 fs-12px fw-lighter color_grey ff-poppins"> Mobile App, Website</p>
+                            <p class="m-0 mw-325px fs-16px fw-normal color_grey ff-poppins pt-2">Lorem ipsum dolor sit
+                                amet, consec tet ur adipiscing elit.Accumsan sed faucibu s faucibus augue. Cras ut.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="border_box my-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/image/mobile-development.png" alt="mobile-development">
+                            </div>
+                            <h2 class="m-0 fs-64px ff-poppins fw-semibold color-ol-grey lh-73px">05</h2>
+                        </div>
+                        <div>
+                            <h2 class="m-0 pt-2 fs-25px fw-semibold ff-poppins color_bold">App Development</h2>
+                            <p class="m-0 py-2 fs-12px fw-lighter color_grey ff-poppins"> Mobile App, Website</p>
+                            <p class="m-0 mw-325px fs-16px fw-normal color_grey ff-poppins pt-2">Lorem ipsum dolor sit
+                                amet, consec tet ur adipiscing elit.Accumsan sed faucibu s faucibus augue. Cras ut.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="border_box my-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/image/digital-marketing.png" alt="digital-marketing">
+                            </div>
+                            <h2 class="m-0 fs-64px ff-poppins fw-semibold color-ol-grey lh-73px">06</h2>
+                        </div>
+                        <div>
+                            <h2 class="m-0 pt-2 fs-25px fw-semibold ff-poppins color_bold">Digital Marketing</h2>
+                            <p class="m-0 py-2 fs-12px fw-lighter color_grey ff-poppins"> Mobile App, Website</p>
+                            <p class="m-0 mw-325px fs-16px fw-normal color_grey ff-poppins pt-2">Lorem ipsum dolor sit
+                                amet, consec tet ur adipiscing elit.Accumsan sed faucibu s faucibus augue. Cras ut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-FFF7F4">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="m-0 fs-16px fw-normal ff-poppins color_orange pb-2">About Us</p>
+                    <h2 class="m-0 fw-semibold fs-39px color_bold ff-poppins pb-2 mw-491px lh-base">Grow Your Business
+                        With
+                        Our Agency</h2>
+                    <p class="m-0 fs-16px ff-poppins fw-normal color_grey mw-544px lh-24 py-3">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet etiam fames.
+                        Tincidunt augue risus mattis eget sem habitant id ultrices augue. Sit rhoncus .</p>
+                    <div>
+                        <div class="d-flex align-items-center py-2">
+                            <img src="assets/image/checkbox-circle-fill.svg" alt="check">
+                            <p class="m-0 ps-3 fs-16px fw-normal ff-poppins color_bold">Innovative website design</p>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <img src="assets/image/checkbox-circle-fill.svg" alt="check">
+                            <p class="m-0 ps-3 fs-16px fw-normal ff-poppins color_bold">UI/UX design with global trends
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <img src="assets/image/checkbox-circle-fill.svg" alt="check">
+                            <p class="m-0 ps-3 fs-16px fw-normal ff-poppins color_bold">Web and email hosting service
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100" src="assets/image/sec-3-img..png" alt="sec-3-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 fs-16px fw-normal ff-poppins color_orange pb-2">Our Case Study</p>
+                <h2 class="m-0 fw-bold fs-39px color_bold ff-poppins pb-4">Our Recent Project</h2>
+            </div>
+            <div class="d-flex align-items-center justify-content-between overflow-x-scroll py-4">
+                <button class="butns py-2 px-4 fs-20px fw-medium ff-poppins">All</button>
+                <button class="butns py-2 px-4 fs-20px fw-medium ff-poppins">UX&nbsp;Design</button>
+                <button class="butns py-2 px-4 fs-20px fw-medium ff-poppins">Web&nbsp;Design</button>
+                <button class="butns py-2 px-4 fs-20px fw-medium ff-poppins">App&nbsp;Development</button>
+                <button class="butns py-2 px-4 fs-20px fw-medium ff-poppins">Game&nbsp;Design</button>
+                <button class="butns py-2 px-4 fs-20px fw-medium ff-poppins">Graphic&nbsp;Design</button>
+            </div>
+            <div class="row">
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector-1.svg" alt="Vector-1">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-1.png" alt="image-1">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-2.png" alt="image-2">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-3.png" alt="image-3">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-4.png" alt="image-4">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-5.png" alt="image-5">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-6.png" alt="image-6">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-7.png" alt="image-7">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-8.png" alt="image-8">
+                </div>
+
+                <div class="position-relative nine_image_hover col-lg-4 col-md-6 p-0">
+                    <div
+                        class="nine_image d-flex flex-column align-items-center justify-content-center position-absolute">
+                        <div>
+                            <img src="assets/image/Vector.svg" alt="Vector">
+                        </div>
+
+                        <h2 class="pt-3 fs-25px fw-semibold ff-poppins text-white">Web
+                            Template
+                        </h2>
+                    </div>
+                    <img class="w-100" src="assets/image/Image-9.png" alt="image-9">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-FFF7F4 py-5">
+        <div class="container py-5 position-relative">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 fs-16px fw-normal ff-poppins color_orange pb-2">Our Testimonial</p>
+                <h2 class="m-0 fw-bold fs-39px color_bold ff-poppins pb-5">What Our Client Saying</h2>
+            </div>
+            <div class="next-brdr position-absolute start-0 top-50 trans-x">
+                <span class="prev">
+                    <svg width="15" height="22" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.53516 8.50008L9.72266 14.6876L7.95516 16.4551L0.000158052 8.50008L7.95516 0.54508L9.72266 2.31258L3.53516 8.50008Z"
+                            fill="#373737" />
+                    </svg>
+                </span>
+            </div>
+            <div class="prev-brdr  position-absolute end-0 top-50 trans-x2">
+                <span class="next">
+                    <svg width="15" height="22" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.46484 8.49992L0.277344 2.31242L2.04484 0.544922L9.99984 8.49992L2.04484 16.4549L0.277344 14.6874L6.46484 8.49992Z"
+                            fill="#373737" />
+                    </svg>
+                </span>
+            </div>
+            <div class="myslider">
+                <div class="slide-box mx-3">
+                    <span class="pb-2"><img src="assets/image/5-star.svg" alt="5-star"></span>
+                    <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-325px">Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.</p>
+                    <div class="d-flex align-items-center justify-content-between pt-3">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/image/Image-13.png" alt="Image-13">
+                            <div class="ps-3">
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Phillip Levin</h2>
+                                <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
+                            </div>
+                        </div>
+                        <img src="assets/image/double-quotes-l.png" alt="double-quotes-l">
+                    </div>
+                </div>
+
+                <div class="slide-box mx-3">
+                    <span class="pb-2"><img src="assets/image/5-star.svg" alt="5-star"></span>
+                    <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-325px">Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.</p>
+                    <div class="d-flex align-items-center justify-content-between pt-3">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/image/Image-14.png" alt="Image-14">
+                            <div class="ps-3">
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Phillip Levin</h2>
+                                <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
+                            </div>
+                        </div>
+                        <img src="assets/image/double-quotes-l.png" alt="double-quotes-l">
+                    </div>
+                </div>
+
+                <div class="slide-box mx-3">
+                    <span class="pb-2"><img src="assets/image/5-star.svg" alt="5-star"></span>
+                    <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-325px">Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.</p>
+                    <div class="d-flex align-items-center justify-content-between pt-3">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/image/Image-15.png" alt="Image-15">
+                            <div class="ps-3">
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Phillip Levin</h2>
+                                <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
+                            </div>
+                        </div>
+                        <img src="assets/image/double-quotes-l.png" alt="double-quotes-l">
+                    </div>
+                </div>
+
+                <div class="slide-box mx-3">
+                    <span class="pb-2"><img src="assets/image/5-star.svg" alt="5-star"></span>
+                    <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-325px">Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.</p>
+                    <div class="d-flex align-items-center justify-content-between pt-3">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/image/Image-14.png" alt="Image-14">
+                            <div class="ps-3">
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Phillip Levin</h2>
+                                <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
+                            </div>
+                        </div>
+                        <img src="assets/image/double-quotes-l.png" alt="double-quotes-l">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between f-c-reverse pb-5">
+                <div class="col-lg-6">
+                    <p class="m-0 fs-16px fw-normal ff-poppins color_orange pb-2 pt-3">Our Capabilities</p>
+                    <h2 class="m-0 fw-semibold fs-39px color_bold ff-poppins mw-530px lh-base">Forward Thinking
+                        Team Of Designers & Developers</h2>
+                    <p class="m-0 fs-16px ff-poppins fw-normal color_grey mw-570px lh-24 py-3">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Cursus ut nisi, amet rhoncus volutpat neque. Ipsum in aliquam
+                        eget vitae purus felis eget massa felis. Eu mattis in malesuada facilisi proin vel.</p>
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-3 col-md-3 col-6 py-3">
+                            <div class="text-center box-brdr mw_125px h-100 mh-108px">
+                                <h2 class="m-0 fs-25px ff-poppins color_orange fw-semibold">80%</h2>
+                                <p class="m-0 fs-12px fw-lighter color_bold ff-poppins">Softwer Development</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 py-3">
+                            <div class="text-center box-brdr mw_125px h-100 mh-108px">
+                                <h2 class="m-0 fs-25px ff-poppins color_orange fw-semibold">90%</h2>
+                                <p class="m-0 pb-3 pt-1 fs-12px fw-lighter color_bold ff-poppins">Graphic&nbsp;Design
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 py-3">
+                            <div class="text-center box-brdr mw_125px h-100 mh-108px">
+                                <h2 class="m-0 fs-25px ff-poppins color_orange fw-semibold">85%</h2>
+                                <p class="m-0 pb-3 pt-1 fs-12px fw-lighter color_bold ff-poppins">Game&nbsp;Deisgn</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6 py-3">
+                            <div class="text-center box-brdr mw_125px h-100 mh-108px">
+                                <h2 class="m-0 fs-25px ff-poppins color_orange fw-semibold">100%</h2>
+                                <p class="m-0 fs-12px fw-lighter color_bold ff-poppins">Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100 fs-20px fw-medium ff-poppins" src="assets/image/capabilities-sec..png"
+                        alt="capabilities-sec">
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="row orng-box">
+                    <div class="col-lg-3 col-md-3 col-6 py-3 border_right brdr-btm">
+                        <div class="d-flex flex-column text-center justify-content-center align-items-center">
+
+                            <div>
+                                <img src="assets/image/man.png" alt="man">
+                            </div>
+                            <h2 class="m-0 fs-39px fw-semibold ff-poppins text-white">120</h2>
+                            <p class="m-0 fs-20px fw-medium ff-poppins text-white"> Top Experts</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 py-3 border_ri brdr-btm">
+                        <div class="d-flex flex-column text-center justify-content-center align-items-center">
+
+                            <div>
+                                <img src="assets/image/target.png" alt="target">
+                            </div>
+                            <h2 class="m-0 fs-39px fw-semibold ff-poppins text-white">120</h2>
+                            <p class="m-0 fs-20px fw-medium ff-poppins text-white"> Top Experts</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 py-3 border_right">
+                        <div class="d-flex flex-column text-center justify-content-center align-items-center">
+
+                            <div>
+                                <img src="assets/image/analysis.png" alt="analysis">
+                            </div>
+                            <h2 class="m-0 fs-39px fw-semibold ff-poppins text-white">120</h2>
+                            <p class="m-0 fs-20px fw-medium ff-poppins text-white"> Top Experts</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 py-3">
+                        <div class="d-flex flex-column text-center justify-content-center align-items-center">
+                            <div>
+                                <img src="assets/image/data-analytics.png" alt="data-analytics">
+                            </div>
+                            <h2 class="m-0 fs-39px fw-semibold ff-poppins text-white">120</h2>
+                            <p class="m-0 fs-20px fw-medium ff-poppins text-white"> Top Experts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-FFF7F4">
+        <div class="container pt-5">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 fs-16px fw-normal ff-poppins color_orange pb-2">Our Blog</p>
+                <h2 class="m-0 fw-bold fs-39px color_bold ff-poppins pb-4">Every Singel Update From Here</h2>
+            </div>
+            <div class="row pt-2">
+                <div class="col-lg-4 col-md-6 col-12 py-2">
+                    <div class="box-2 p-3 h-100">
+                        <div class="img-brdr overflow-hidden">
+                            <img class="w-100" src="assets/image/Image-10.png" alt="image-10">
+                        </div>
+                        <h2 class="fs-20px ff-poppins fw-medium color_bold m-0 mw-340px pt-3">35 Stellar Graphic Design
+                            Blogs to Keep YouEducated and Inspired</h2>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/timer.svg" alt="timer">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">January&nbsp;25,&nbsp;2021</p>
+                            </div>
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/person.svg" alt="person">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">Cristofer&nbsp;Westervelt</p>
+                            </div>
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/message-circle.svg" alt="message-circle">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">10&nbsp;Comment</p>
+                            </div>
+                        </div>
+                        <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-338px pb-4">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Eget nunc, sed sed sed. Sit integer
+                            at dui at non ipsum tellus ac. Est.</p>
+                        <button class="hero-btn mb-3">Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 py-2">
+                    <div class="box-2 p-3 h-100">
+                        <div class="img-brdr overflow-hidden">
+                            <img class="w-100" src="assets/image/Image-11.png" alt="image-10">
+                        </div>
+                        <h2 class="fs-20px ff-poppins fw-medium color_bold m-0 mw-340px pt-3">Ridiculously powerful 2021
+                            iPad
+                            Pro may drop this month</h2>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/timer.svg" alt="timer">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">January&nbsp;25,&nbsp;2021</p>
+                            </div>
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/person.svg" alt="person">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">Cristofer&nbsp;Westervelt</p>
+                            </div>
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/message-circle.svg" alt="message-circle">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">10&nbsp;Comment</p>
+                            </div>
+                        </div>
+                        <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-338px pb-4">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Eget nunc, sed sed sed. Sit integer
+                            at dui at non ipsum tellus ac. Est.</p>
+                        <button class="hero-btn mb-3">Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 py-2">
+                    <div class="box-2 p-3 h-100">
+                        <div class="img-brdr overflow-hidden">
+                            <img class="w-100" src="assets/image/Image-12.png" alt="image-10">
+                        </div>
+                        <h2 class="fs-20px ff-poppins fw-medium color_bold m-0 mw-340px pt-3">Memphis Design: the
+                            defining look of the 1980s</h2>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/timer.svg" alt="timer">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">January&nbsp;25,&nbsp;2021</p>
+                            </div>
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/person.svg" alt="person">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">Cristofer&nbsp;Westervelt</p>
+                            </div>
+                            <div class="d-flex align-items-center py-2">
+                                <img src="assets/image/message-circle.svg" alt="message-circle">
+                                <p class="m-0 ps-1 fs-10px ff-poppins color_bold">10&nbsp;Comment</p>
+                            </div>
+                        </div>
+                        <p class="m-0 fs-16px fw-normal ff-poppins color_grey mw-338px pb-4">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Eget nunc, sed sed sed. Sit integer
+                            at dui at non ipsum tellus ac. Est.</p>
+                        <button class="hero-btn mb-3">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-lg-5">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between orng-box my-3">
+                <div class="col-lg-4">
+                    <p class="m-0 fs-16px fw-normal ff-poppins text-white pb-2">Subscribe Newsletter</p>
+                    <h2 class="m-0 fw-bold fs-39px color_bold ff-poppins text-white pb-4">Lets Stay In Touch</h2>
+                </div>
+                <div class="col-lg-7">
+                    <div class="input-border">
+                        <div class="d-flex align-items-center justify-content-between flex-smcolumn">
+                            <div class="d-flex align-items-center w-100 pb-3-sm">
+                                <input class="ps-4 input-brdr w-100" type="text" placeholder="Enter your email" />
+                            </div>
+                            <button class="fs-20px fw-medium ff-poppins subscribe-btn">Subscribe&nbsp;Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-img pt-5">
+        <div class="container pt-4">
+            <div class="row pb-5">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <h2 class="m-0 digi fs-39px">Digi<span class="ency text-white">ency</span></h2>
+                    <p class="m-0 mw-270 fs-16px fw-normal ff-poppins text-white pt-4">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Tortor facilisi quis risus egestas ipsum.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-2">
+                    <h2 class="m-0">Location</h2>
+                    <ul class="p-0 pt-4">
+                        <li><a class="m-0 pt-4" href="">3517 W. Gray St.
+                                Utica,Pennsylvania 57867</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-2">
+                    <h2 class="m-0">Call Us</h2>
+                    <ul class="p-0 pt-4">
+                        <li><a href="">(252) 555-0126</a></li>
+                        <li><a href="">info@youremai.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-2">
+                    <h2 class="m-0">Follow Us</h2>
+                    <div class="d-flex gap-3 mt-4 flex-wrap">
+                        <div class="hover_img">
+                            <a href="https://www.Facebook.com"><svg width="50" height="50" viewBox="0 0 50 50"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="25" cy="25" r="25" fill="white" />
+                                    <g clip-path="url(#clip0_3953_2480)">
+                                        <path
+                                            d="M27 26.5H29.5L30.5 22.5H27V20.5C27 19.47 27 18.5 29 18.5H30.5V15.14C30.174 15.097 28.943 15 27.643 15C24.928 15 23 16.657 23 19.7V22.5H20V26.5H23V35H27V26.5Z"
+                                            fill="#373737" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                        <div class="hover_img">
+                            <a href="https://www.instagram.com"> <svg width="50" height="50" viewBox="0 0 50 50"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="25" cy="25" r="25" fill="white" />
+                                    <path
+                                        d="M25 15C27.717 15 28.056 15.01 29.122 15.06C30.187 15.11 30.912 15.277 31.55 15.525C32.21 15.779 32.766 16.123 33.322 16.678C33.8305 17.1779 34.224 17.7826 34.475 18.45C34.722 19.087 34.89 19.813 34.94 20.878C34.987 21.944 35 22.283 35 25C35 27.717 34.99 28.056 34.94 29.122C34.89 30.187 34.722 30.912 34.475 31.55C34.2247 32.2178 33.8311 32.8226 33.322 33.322C32.822 33.8303 32.2173 34.2238 31.55 34.475C30.913 34.722 30.187 34.89 29.122 34.94C28.056 34.987 27.717 35 25 35C22.283 35 21.944 34.99 20.878 34.94C19.813 34.89 19.088 34.722 18.45 34.475C17.7823 34.2245 17.1775 33.8309 16.678 33.322C16.1694 32.8222 15.7759 32.2175 15.525 31.55C15.277 30.913 15.11 30.187 15.06 29.122C15.013 28.056 15 27.717 15 25C15 22.283 15.01 21.944 15.06 20.878C15.11 19.812 15.277 19.088 15.525 18.45C15.7752 17.7822 16.1688 17.1773 16.678 16.678C17.1777 16.1692 17.7824 15.7757 18.45 15.525C19.088 15.277 19.812 15.11 20.878 15.06C21.944 15.013 22.283 15 25 15ZM25 20C23.6739 20 22.4021 20.5268 21.4645 21.4645C20.5268 22.4021 20 23.6739 20 25C20 26.3261 20.5268 27.5979 21.4645 28.5355C22.4021 29.4732 23.6739 30 25 30C26.3261 30 27.5979 29.4732 28.5355 28.5355C29.4732 27.5979 30 26.3261 30 25C30 23.6739 29.4732 22.4021 28.5355 21.4645C27.5979 20.5268 26.3261 20 25 20ZM31.5 19.75C31.5 19.4185 31.3683 19.1005 31.1339 18.8661C30.8995 18.6317 30.5815 18.5 30.25 18.5C29.9185 18.5 29.6005 18.6317 29.3661 18.8661C29.1317 19.1005 29 19.4185 29 19.75C29 20.0815 29.1317 20.3995 29.3661 20.6339C29.6005 20.8683 29.9185 21 30.25 21C30.5815 21 30.8995 20.8683 31.1339 20.6339C31.3683 20.3995 31.5 20.0815 31.5 19.75ZM25 22C25.7956 22 26.5587 22.3161 27.1213 22.8787C27.6839 23.4413 28 24.2044 28 25C28 25.7956 27.6839 26.5587 27.1213 27.1213C26.5587 27.6839 25.7956 28 25 28C24.2044 28 23.4413 27.6839 22.8787 27.1213C22.3161 26.5587 22 25.7956 22 25C22 24.2044 22.3161 23.4413 22.8787 22.8787C23.4413 22.3161 24.2044 22 25 22Z"
+                                        fill="#373737" />
+                                </svg></a>
+                        </div>
+                        <div class="hover_img">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="white" />
+                                <g clip-path="url(#clip0_3953_2504)">
+                                    <path
+                                        d="M26.3092 33.3999C24.9869 33.6065 23.6345 33.4979 22.3621 33.0829C21.0897 32.668 19.9333 31.9585 18.9869 31.0122C18.0406 30.0658 17.3311 28.9094 16.9162 27.637C16.5012 26.3646 16.3926 25.0122 16.5992 23.6899C16.0779 22.6984 15.8874 21.5662 16.0556 20.4587C16.2237 19.3513 16.7417 18.3266 17.5338 17.5345C18.3259 16.7424 19.3505 16.2245 20.458 16.0563C21.5655 15.8882 22.6977 16.0786 23.6892 16.5999C25.0115 16.3934 26.3639 16.502 27.6363 16.9169C28.9086 17.3318 30.0651 18.0413 31.0114 18.9877C31.9578 19.934 32.6673 21.0904 33.0822 22.3628C33.4971 23.6352 33.6057 24.9876 33.3992 26.3099C33.9204 27.3014 34.1109 28.4336 33.9428 29.5411C33.7746 30.6486 33.2566 31.6732 32.4646 32.4653C31.6725 33.2574 30.6478 33.7754 29.5404 33.9435C28.4329 34.1117 27.3007 33.9212 26.3092 33.3999ZM25.0512 30.1559H25.0112C27.8832 30.1559 29.3142 28.7699 29.3142 26.9129C29.3142 25.7149 28.7632 24.4419 26.5882 23.9549L24.6052 23.5149C23.8502 23.3429 22.9832 23.1149 22.9832 22.3999C22.9832 21.6849 23.6032 21.1869 24.7072 21.1869C26.9372 21.1869 26.7342 22.7149 27.8382 22.7149C28.4142 22.7149 28.9312 22.3729 28.9312 21.7849C28.9312 20.4149 26.7342 19.3849 24.8752 19.3849C22.8542 19.3849 20.7022 20.2439 20.7022 22.5289C20.7022 23.6269 21.0962 24.7989 23.2622 25.3419L25.9512 26.0129C26.7672 26.2149 26.9692 26.6719 26.9692 27.0849C26.9692 27.7719 26.2852 28.4429 25.0512 28.4429C22.6342 28.4429 22.9732 26.5859 21.6772 26.5859C21.0972 26.5859 20.6742 26.9839 20.6742 27.5569C20.6742 28.6709 22.0262 30.1549 25.0512 30.1549V30.1559Z"
+                                        fill="#373737" />
+                                </g>
+
+                            </svg>
+                        </div>
+                        <div class="hover_img">
+                            <a href="https://www.Twitter.com"> <svg width="50" height="50" viewBox="0 0 50 50"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="25" cy="25" r="25" fill="white" />
+                                    <path
+                                        d="M35.1623 18.6559C34.3989 18.9936 33.5893 19.2154 32.7603 19.3139C33.634 18.7914 34.288 17.9689 34.6003 16.9999C33.7803 17.4879 32.8813 17.8299 31.9443 18.0149C31.3149 17.3415 30.4807 16.8949 29.5713 16.7445C28.6618 16.5941 27.7282 16.7484 26.9156 17.1834C26.1029 17.6183 25.4567 18.3096 25.0774 19.1497C24.6981 19.9898 24.607 20.9317 24.8183 21.8289C23.1554 21.7456 21.5286 21.3134 20.0436 20.5606C18.5585 19.8077 17.2484 18.751 16.1983 17.4589C15.8266 18.0974 15.6313 18.8232 15.6323 19.5619C15.6323 21.0119 16.3703 22.2929 17.4923 23.0429C16.8283 23.022 16.1789 22.8427 15.5983 22.5199V22.5719C15.5985 23.5376 15.9327 24.4735 16.5441 25.221C17.1556 25.9684 18.0068 26.4814 18.9533 26.6729C18.3369 26.84 17.6906 26.8646 17.0633 26.7449C17.3302 27.5762 17.8503 28.3031 18.5509 28.824C19.2515 29.3449 20.0974 29.6337 20.9703 29.6499C20.1028 30.3313 19.1095 30.8349 18.0472 31.1321C16.9849 31.4293 15.8744 31.5142 14.7793 31.3819C16.691 32.6114 18.9164 33.264 21.1893 33.2619C28.8823 33.2619 33.0893 26.8889 33.0893 21.3619C33.0893 21.1819 33.0843 20.9999 33.0763 20.8219C33.8952 20.2301 34.6019 19.4969 35.1633 18.6569L35.1623 18.6559Z"
+                                        fill="#373737" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-flex"></div>
+            <div class=" d-flex align-items-center py-3">
+                <div class="d-flex align-items-center pe-5">
+                    <img src="assets/image/copyright-fill.png" alt="copyright-fill">
+                    <p class="m-0 fs-16px fw-normal ff-poppins text-white ps-2">Copyright 2021. All Right Reserved By
+                        Ojjomedia</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center px-5">
+                    <img src="assets/image/checkbox-blank-circle-fill.svg" alt="checkbox-blank-circle-fill">
+                    <p class="m-0 fs-16px fw-normal ff-poppins text-white ps-2">Privacy Plicy</p>
+                </div>
+                <div class="d-flex align-items-center ps-5">
+                    <img src="assets/image/checkbox-blank-circle-fill.svg" alt="checkbox-blank-circle-fill">
+                    <p class="m-0 fs-16px fw-normal ff-poppins text-white ps-2">Privacy Plicy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script>
+        $('.myslider').slick({
+            dots: false,
+            arrows: true,
+            infinite: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        autoplay: true,
+                        autoplayspeed: 1000,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        arrows: false,
+                    }
+                },
+
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+</body>
+
+</html>
