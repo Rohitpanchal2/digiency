@@ -27,7 +27,7 @@
 }
 
 .change .bar3 {
-    transform: translate(0, -21px) rotate(45deg);
+    transform: translate(0, -15px) rotate(45deg);
 }
 
 .pointer {
@@ -37,53 +37,62 @@
 .nav-sticky {
     position: sticky;
     top: 0px;
-    background-color: #FFF7F4;
+    background-color: var(--bg-color-skin);
     z-index: 23;
 }
 
 .digi {
     font-family: 'poppins', sans-serif;
-    color: #FF5300;
     font-weight: 700;
 }
 
-.ency {
-    color: #373737;
-}
 
 nav ul li a {
     font-weight: 500;
     font-family: 'poppins', sans-serif;
-    color: #373737;
 }
 
 nav ul li a:hover {
-    color: #FF5300;
+    color: var(--color-orange);
     transition: linear 0.4s;
 }
 
 .nav-btn {
-    border: 2px solid #373737;
-    background-color: #FFF7F4;
+    border: 2px solid var(--color-black);
+    background-color: var(--bg-color-skin);
     font-size: 20px;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
     border-radius: 5px;
-    color: #373737;
+    color: var(--color-black);
 }
 
 .nav-btn:hover {
-    color: #FFF7F4;
-    background-color: #373737;
+    color: var(--color-white);
+    background-color: var(--color-black);
     transition: linear 0.5s;
-}
-
-.bg-FFF7F4 {
-    background-color: #FFF7F4;
 }
 
 .ff-poppins {
     font-family: 'poppins', sans-serif;
+}
+
+.beforeline {
+    background-color: var(--color-orange);
+    width: 50px;
+    height: 1px;
+}
+
+.afterline {
+    background-color: var(--color-orange);
+    width: 50px;
+    height: 1px;
+}
+
+.afterline2 {
+    background-color: var(--bgcolor-white);
+    width: 50px;
+    height: 1px;
 }
 
 .lh-73px {
@@ -104,16 +113,16 @@ nav ul li a:hover {
 }
 
 .hero-btn {
-    border: 2px solid #FF5300;
+    border: 2px solid var(--color-orange);
     padding: 10px 30px;
-    color: #ffffff;
-    background-color: #FF5300;
+    color: var(--color-white);
+    background-color: var(--bgcolor-orange);
     border-radius: 5px;
 }
 
 .hero-btn:hover {
-    background-color: #ffffff;
-    color: #FF5300;
+    background-color: var(--bgcolor-white);
+    color: var(--color-orange);
     transition: linear 0.5s;
 }
 
@@ -164,13 +173,13 @@ nav ul li a:hover {
 .butns {
     border: none;
     border-radius: 10px;
-    background-color: #ffffff;
-    color: #7B7B7B;
+    background-color: var(--bgcolor-white);
+    color: var(--color-lightgrey);
 }
 
 .butns:hover {
-    background-color: #FF5300;
-    color: #ffffff;
+    background-color: var(--bgcolor-orange);
+    color: var(--color-white);
     transition: linear 0.5s;
 }
 
@@ -179,7 +188,7 @@ nav ul li a:hover {
     left: 15%;
     opacity: 0;
     z-index: 1;
-    background-color: #FF5300;
+    background-color: var(--bgcolor-orange);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,7 +232,7 @@ nav ul li a:hover {
 .orng-box {
     border: none;
     border-radius: 10px;
-    background-color: #FF5300;
+    background-color: var(--bgcolor-orange);
     padding: 60px 40px;
 }
 
@@ -235,7 +244,7 @@ nav ul li a:hover {
 .box-2 {
     border: none;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var(--bgcolor-white);
 }
 
 .box-2:hover {
@@ -246,7 +255,7 @@ nav ul li a:hover {
 .input-border {
     border: none;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: var(--bgcolor-white);
     border-radius: 5px;
 }
 
@@ -258,33 +267,29 @@ nav ul li a:hover {
 }
 
 .subscribe-btn {
-    border: 2px solid #FF5300;
+    border: 2px solid var(--color-orange);
     padding: 10px 30px;
-    color: #ffffff;
-    background-color: #FF5300;
+    color: var(--color-white);
+    background-color: var(--bgcolor-orange);
     border-radius: 5px;
 }
 
 .bg-img {
-    background-image: url(../image/bg-img.png);
+    background-image: url("../image/bg-img.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 footer ul li a {
-    font-size: 20px;
     font-family: 'poppins', sans-serif;
     font-weight: 500;
-    color: #ffffff;
     cursor: pointer;
 }
 
 footer h2 {
-    font-size: 25px;
     font-weight: 600;
     font-family: 'poppins', sans-serif;
-    color: #FF5300;
 }
 
 .hover_img {
@@ -292,12 +297,12 @@ footer h2 {
 }
 
 :hover.hover_img path {
-    fill: #FF5300;
-    background-color: #FF5300;
+    fill: var(--color-orange);
+    background-color: var(--bgcolor-orange);
 }
 
 :hover.hover_img circle {
-    fill: white;
+    fill: var(--color-white);
 }
 
 .line {
@@ -310,7 +315,7 @@ footer h2 {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background-color: #ffffff;
+    background-color: var(--bgcolor-white);
 }
 
 .slick-dots li.slick-active button::before {
@@ -350,27 +355,6 @@ footer h2 {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.next-brdr {
-    border: 2px solid black;
-    border-radius: 100%;
-    display: inline-block;
-    padding: 15px 20px;
-}
-
-.prev-brdr {
-    border: 2px solid black;
-    border-radius: 100%;
-    display: inline-block;
-    padding: 15px 20px;
-}
-
-.prev-brdr:hover {
-    border: 2px solid #F53855;
-}
-
-.next-brdr:hover {
-    border: 2px solid #F53855;
-}
 
 .trans-x {
     transform: translate(-50px, 30px);
@@ -381,11 +365,34 @@ footer h2 {
 }
 
 :hover.next-brdr path {
-    fill: #F53855;
+    fill: var(--color-orange);
+}
+
+:hover.next-brdr circle {
+    stroke: var(--color-orange);
 }
 
 :hover.prev-brdr path {
-    fill: #F53855;
+    fill: var(--color-orange);
+}
+
+:hover.prev-brdr circle {
+    stroke: var(--color-orange);
+}
+
+
+.brdr-round {
+    border: none;
+    background-color: var(--bgcolor-orange);
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.back-top {
+    position: absolute;
+    right: 7%;
+    bottom: 2%;
 }
 
 
@@ -399,11 +406,11 @@ footer h2 {
         justify-content: center;
         position: fixed;
         top: 0;
-        right: 100%;
-        left: -100%;
+        right: -100%;
+        left: 100%;
         margin-top: 60px;
         height: 100%;
-        background-color: #FFF7F4;
+        background-color: var(--bg-color-skin);
         flex-direction: column;
         width: 100%;
         transition: all 0.8s linear;
@@ -462,7 +469,7 @@ footer h2 {
     .orng-box {
         border: none;
         border-radius: 10px;
-        background-color: #FF5300;
+        background-color: var(--bgcolor-orange);
         padding: 10px 20px;
     }
 
@@ -476,5 +483,11 @@ footer h2 {
 
     .pb-3-sm {
         padding-bottom: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .overflowx-scrol {
+        overflow-x: scroll;
     }
 }

@@ -13,6 +13,12 @@
     --color-lightgrey: #7b7b7b;
     --color-grey: #EFEFEF;
     --color-orange: #ff5300;
+    --color-white: #ffffff;
+    --color-darkblack: #000000;
+
+    --bgcolor-orange: #ff5300;
+    --bgcolor-white: #ffffff;
+    --bg-color-skin: #FFF7F4;
 }
 
 .fs-10px {
@@ -61,6 +67,26 @@
 
 .color_orange {
     color: var(--color-orange);
+}
+
+.color_white {
+    color: var(--color-white);
+}
+
+.color_black {
+    color: var(--color-darkblack);
+}
+
+.back-color_white {
+    background-color: var(--bgcolor-white);
+}
+
+.back-color_orange {
+    background-color: var(--bgcolor-orange);
+}
+
+.bg-skin {
+    background-color: var(--bg-color-skin);
 }
 
 @media (max-width:1024px) {
