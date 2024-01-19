@@ -195,12 +195,12 @@ nav ul li a:hover {
     flex-direction: column;
     height: 80%;
     width: 70%;
-
+    transition: 1s;
 }
 
 :hover.nine_image_hover .nine_image {
     opacity: 0.6;
-    transition: linear 0.8s;
+    transition: linear all 0.8s;
 }
 
 .box-brdr {
@@ -380,20 +380,22 @@ footer h2 {
     stroke: var(--color-orange);
 }
 
-
-.brdr-round {
-    border: none;
-    background-color: var(--bgcolor-orange);
-    padding: 10px;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.back-top {
-    position: absolute;
-    right: 7%;
+#myBtn {
+    display: none;
+    position: fixed;
     bottom: 2%;
+    right: 2%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--bgcolor-orange);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
 }
+
 
 
 @media (max-width:992px) {

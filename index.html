@@ -37,7 +37,7 @@
                         </span>
                     </label>
                     <ul class="nav_bar p-0 d-flex m-0 space align-items-center">
-                        <li><a class="px-3 fs-20px color_bold" href="#">Home</a></li>
+                        <li><a class="px-3 fs-20px color_bold" href="">Home</a></li>
                         <li><a class="px-3 fs-20px color_bold" href="#">About&nbsp;Us</a></li>
                         <li><a class="px-3 fs-20px color_bold" href="#">Services</a></li>
                         <li><a class="px-3 fs-20px color_bold" href="#">Portfolio</a></li>
@@ -207,6 +207,7 @@
                             <p class="m-0 ps-3 fs-16px fw-normal ff-poppins color_bold">UI/UX design with global trends
                             </p>
                         </div>
+
                         <div class="d-flex align-items-center py-2">
                             <img src="assets/image/checkbox-circle-fill.svg" alt="check">
                             <p class="m-0 ps-3 fs-16px fw-normal ff-poppins color_bold">Web and email hosting service
@@ -408,7 +409,7 @@
                         <div class="d-flex align-items-center">
                             <img src="assets/image/Image-13.png" alt="Image-13">
                             <div class="ps-3">
-                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Lincoln&nbsp;Lipshutz</h2>
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Lincoln Lipshutz</h2>
                                 <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
                             </div>
                         </div>
@@ -424,7 +425,7 @@
                         <div class="d-flex align-items-center">
                             <img src="assets/image/Image-14.png" alt="Image-14">
                             <div class="ps-3">
-                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Phillip&nbsp;Levin</h2>
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Phillip Levin</h2>
                                 <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
                             </div>
                         </div>
@@ -440,7 +441,7 @@
                         <div class="d-flex align-items-center">
                             <img src="assets/image/Image-15.png" alt="Image-15">
                             <div class="ps-3">
-                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Lincoln&nbsp;Lipshutz</h2>
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Lincoln Lipshutz</h2>
                                 <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
                             </div>
                         </div>
@@ -456,7 +457,7 @@
                         <div class="d-flex align-items-center">
                             <img src="assets/image/Image-14.png" alt="Image-14">
                             <div class="ps-3">
-                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Craig&nbsp;Siphron</h2>
+                                <h2 class="m-0 fs-20px fw-medium ff-poppins color_orange">Craig Siphron</h2>
                                 <p class="m-0 fs-12px fw-lighter ff-poppins color_grey">CEO / Creative IT</p>
                             </div>
                         </div>
@@ -767,8 +768,9 @@
                     <p class="m-0 fs-16px fw-normal ff-poppins color_white ps-2">Privacy Plicy</p>
                 </div>
             </div>
-            <div class=" back-top d-flex justify-content-end ">
-                <a href="#home"><img class="brdr-round" src="assets/image/arrow-up-fill.svg" alt="back-to-top"></a>
+            <div class="d-flex justify-content-end ">
+                <a href="#home" onclick="topFunction()" id="myBtn" title="Go to top"><img class="brdr-round"
+                        src="assets/image/arrow-up-fill.svg" alt="back-to-top"></a>
             </div>
         </div>
     </footer>
@@ -834,6 +836,27 @@
             ]
         });
 
+    </script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
